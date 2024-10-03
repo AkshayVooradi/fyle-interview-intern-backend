@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "7755:7755"  # Map container port 7755 to host
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
+
+
+# use the command docker-compose up --build to run the image 
